@@ -25,10 +25,16 @@ def blue_rect():
     pygame.draw.rect(screen, rect_color, rect_point, rect_width)
 
 
+def red_rect():
+    rect_color = pygame.Color('red')
+    rect_width = 0
+    rect_point = [(30, 250), (300, 100)]
+    pygame.draw.rect(screen, rect_color, rect_point, rect_width)
+
 flag()
 white_rect()
 blue_rect()
-# слияние белого и синего
+red_rect()
 
 while pygame.event.wait().type != pygame.QUIT:
     pygame.display.flip()
