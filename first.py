@@ -28,6 +28,7 @@ def blue_rect():
 flag()
 white_rect()
 blue_rect()
+# слияние белого и синего
 
 while pygame.event.wait().type != pygame.QUIT:
     pygame.display.flip()
