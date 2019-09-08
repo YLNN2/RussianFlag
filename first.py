@@ -13,6 +13,16 @@ def flag():
     pygame.draw.rect(screen, rect_color, rect_point, rect_width)
 
 
+def blue_rect():
+    rect_color = pygame.Color('blue')
+    rect_width = 0
+    rect_point = [(30, 150), (300, 100)]
+    pygame.draw.rect(screen, rect_color, rect_point, rect_width)
+
+
+flag()
+blue_rect()
+
 flag()
 
 while pygame.event.wait().type != pygame.QUIT:
