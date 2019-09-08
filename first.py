@@ -35,6 +35,7 @@ flag()
 white_rect()
 blue_rect()
 red_rect()
+# флаг готовый
 
 while pygame.event.wait().type != pygame.QUIT:
     pygame.display.flip()
