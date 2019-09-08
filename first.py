@@ -13,7 +13,14 @@ def flag():
     pygame.draw.rect(screen, rect_color, rect_point, rect_width)
 
 
+def white_rect():
+    rect_color = pygame.Color('white')
+    rect_width = 0
+    rect_point = [(30, 50), (300, 100)]
+    pygame.draw.rect(screen, rect_color, rect_point, rect_width)
+
 flag()
+white_rect()
 
 while pygame.event.wait().type != pygame.QUIT:
     pygame.display.flip()
